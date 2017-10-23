@@ -1,13 +1,13 @@
 import React from 'react'
 import pluralize from 'pluralize'
 
-const OrderSummary = (props) => {
-    const duration = props.duration + " " + pluralize('day', props.duration);
-    const initialTotal = props.duration * props.price;
-    const discount = Math.floor((initialTotal / 100) * props.discount);
-    const subTotal = initialTotal - discount;
-    const tax = Math.floor((subTotal / 100) * props.tax);
-    const total = subTotal + tax;
+const OrderSummary = ({ duration, discount, price, tax }) => {
+    const time = duration + " " + pluralize('day', duration);
+    const initialTotal = duration * price;
+    const discountTotal = Math.floor((initialTotal / 100) * discount);
+    const subTotal = initialTotal - discountTotal;
+    const taxTotal = Math.floor((subTotal / 100) * tax);
+    const total = subTotal + taxTotal;
 
     return (
         <div className="OrderSummary">
@@ -15,12 +15,12 @@ const OrderSummary = (props) => {
             <table>
                 <tbody>
                     <tr>
-                        <td>{props.price} x {duration}</td>
+                        <td>{price} x {time}</td>
                         <td>{initialTotal} GBP</td>
                     </tr>
                     <tr>
                         <td>Discount</td>
-                        <td>{discount} GBP</td>
+                        <td>{discountTotal} GBP</td>
                     </tr>
                     <tr>
                         <td>Subtotal</td>
@@ -28,7 +28,7 @@ const OrderSummary = (props) => {
                     </tr>
                     <tr>
                         <td>Tax</td>
-                        <td>{tax} GBP</td>
+                        <td>{taxTotal} GBP</td>
                     </tr>
                 </tbody>
             </table>
