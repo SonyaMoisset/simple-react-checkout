@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
-import ImagePreview from './components/ImagePreviewArea/ImagePreview'
-import Checkout from './components/CheckoutArea/Checkout'
+import React, { Component } from 'react'
 
-import { Header, Overlay } from './components'
+import { Checkout, Header, ImagePreview, Overlay } from './components'
 
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import './App.css';
 
 export default class App extends Component {
   constructor (props) {
-    super (props);
+    super (props)
 
     this.state = {
       people: 1,
@@ -21,12 +19,12 @@ export default class App extends Component {
   }
 
   handleSubmit = (event) => {
-    console.log('handle ajax submission here');
-    event.preventDefault();
+    console.log('handle ajax submission here')
+    event.preventDefault()
   }
 
   handleChange = (event) => {
-    this.setState({ duration: event.target.value });
+    this.setState({ duration: event.target.value })
   }
 
   render() {

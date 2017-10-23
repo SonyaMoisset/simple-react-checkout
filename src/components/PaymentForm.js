@@ -1,10 +1,8 @@
 import React from 'react'
 
-import BasicInput from './BasicInput'
-import ExpiryDate from './ExpiryDate'
-import CheckoutButton from './CheckoutButton'
+import { BasicInput, CheckoutButton, ExpiryDate } from './'
 
-export const PaymentForm = ({ onSubmit }) => (
+const PaymentForm = ({ onSubmit }) => (
     <div className="PaymentForm">
         <form onSubmit={ onSubmit }>
             <div className="Title">Payment information</div>
@@ -27,3 +25,5 @@ export const PaymentForm = ({ onSubmit }) => (
         </form>
     </div>
 )
+
+export default PaymentForm

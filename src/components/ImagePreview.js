@@ -1,7 +1,6 @@
 import React from 'react'
 
-import Meta from './Meta'
-import Information from './Information'
+import { Information, Meta } from './'
 
 const ImagePreview = ({ image, price, people }) => (
     <div className="ImagePreview" style={{ 'backgroundImage': 'url(' + image + ')' }}>
