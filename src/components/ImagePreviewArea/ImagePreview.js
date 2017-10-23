@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Workspace from './WorkspaceComponents'
+import Meta from './Meta'
 import Information from './Information'
 
 const ImagePreview = (props) => {
@@ -10,7 +10,7 @@ const ImagePreview = (props) => {
                     name="Coworking Space, South Korea"
                     price={props.price}
                     duration="1" />
-                <Workspace.Meta
+                <Meta
                     people={props.people} />
             </div>
         </div>
