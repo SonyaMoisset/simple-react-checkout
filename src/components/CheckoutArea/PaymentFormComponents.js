@@ -1,14 +1,7 @@
 import React from 'react'
 import BasicInput from './BasicInput'
 import ExpiryDate from './ExpiryDate'
-
-export const CheckoutButton = (props) => {
-    return (
-        <div className="CheckoutButton">
-            <button>Book securely</button>
-        </div>
-    )
-}
+import CheckoutButton from './CheckoutButton'
 
 export const PaymentForm = (props) => {
     return (
