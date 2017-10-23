@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Overlay = props => (
+const Overlay = ({ image }) => (
     <div
         className="Overlay"
-        style={{ 'backgroundImage': 'url(' + props.image + ')' }}>
+        style={{ 'backgroundImage': 'url(' + image + ')' }}>
         Something
     </div>
 )
