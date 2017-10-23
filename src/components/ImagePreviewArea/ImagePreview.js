@@ -1,11 +1,12 @@
 import React from 'react'
 import * as Workspace from './WorkspaceComponents'
+import Information from './Information'
 
 const ImagePreview = (props) => {
     return (
         <div className="ImagePreview" style={{'backgroundImage': 'url(' + props.image + ')'}}>
             <div className="WorkspaceOverview">
-                <Workspace.Information 
+                <Information 
                     name="Coworking Space, South Korea"
                     price={props.price}
                     duration="1" />
