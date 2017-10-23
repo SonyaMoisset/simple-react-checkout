@@ -13,4 +13,4 @@ To see the project:
 - CSS Partials/Imports
 
 ### A user can interact with the checkout form
-![Bookmarker](https://github.com/SonyaMoisset/simple-react-checkout/blob/master/checkout.png)
+![Bookmarker](https://github.com/SonyaMoisset/Checkout_REACT/blob/master/checkout.png)
