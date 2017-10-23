@@ -1,0 +1,40 @@
+.CVC {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.CVC label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.CVC input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #17183B;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    outline: none;
+}
+
+.CVC input:focus {
+    border-bottom: 1px solid #FFB49A;
+}
+
+.CVC span {
+    display: block;
+    padding-top: 20px;
+    margin-left: 10px;
+    color: #FFB49A;
+    font-size: 11px;
+    border-bottom: 1px dotted #FFB49A;
+}

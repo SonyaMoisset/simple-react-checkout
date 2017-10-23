@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import { Checkout, Header, ImagePreview, Overlay } from './components'
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import './App.css';
 
 export default class App extends Component {
   constructor (props) {

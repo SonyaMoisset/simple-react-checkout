@@ -1,0 +1,21 @@
+.Overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    opacity: .2;
+}
+
+.overlay-enter {
+    opacity: 0.01;
+}
+
+.overlay-enter.overlay-enter-active {
+    opacity: .2;
+    -webkit-transition: opacity .5s ease .5s;
+    transition: opacity .5s ease .5s;
+}
