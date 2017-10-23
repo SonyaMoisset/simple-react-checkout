@@ -2,18 +2,16 @@ import React from 'react'
 import OrderSummary from './OrderSummary'
 import {PaymentForm} from './PaymentFormComponents'
 
-const Checkout = (props) => {
-    return (
-        <div className="Checkout">
-            <OrderSummary
-                duration={props.duration}
-                discount={props.discount}
-                tax={props.tax}
-                price={props.price} />
-            <PaymentForm
-                onSubmit={props.onSubmit} />
-        </div>
-    )
-}
+const Checkout = ({ duration, discount, tax, price, onSubmit }) =>  (
+    <div className="Checkout">
+        <OrderSummary
+            duration={duration}
+            discount={discount}
+            tax={tax}
+            price={price} />
+        <PaymentForm
+            onSubmit={onSubmit} />
+    </div>
+)
 
 export default Checkout
