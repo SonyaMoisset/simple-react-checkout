@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import { Checkout, Header, ImagePreview, Overlay } from './components'
+import { Header, Overlay } from './components'
+import { Checkout, ImagePreview } from './containers'
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 

@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { OrderSummary, PaymentForm } from './'
+import { OrderSummary } from '../components'
+import { PaymentForm } from './' 
 
 const Checkout = ({ duration, discount, tax, price, onSubmit }) =>  (
     <div className="checkout">

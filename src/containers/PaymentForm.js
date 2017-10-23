@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BasicInput, CheckoutButton, ExpiryDate } from './'
+import { BasicInput, CheckoutButton, ExpiryDate } from '../components'
 
 const PaymentForm = ({ onSubmit }) => (
     <div className="PaymentForm">
