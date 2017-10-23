@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Container = ({ children }) => (
     <div className="Container">
@@ -6,4 +6,4 @@ const Container = ({ children }) => (
     </div>
 )
 
-export default Container;
+export default Container
