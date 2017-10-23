@@ -28,7 +28,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <ReactCSSTransitionGroup
           transitionName="overlay"
           transitionEnterTimeout={500}
@@ -42,7 +42,7 @@ export default class App extends Component {
           transitionName="container"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}>
-          <div className="Container">
+          <div className="container">
             <ImagePreview
               price={this.state.price}
               duration={this.state.duration}

@@ -1,4 +1,4 @@
-.ExpiryDate {
+.expiry-date {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -12,7 +12,7 @@
     flex-wrap: nowrap;
 }
 
-.ExpiryDate label {
+.expiry-date label {
     display: block;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -20,21 +20,21 @@
     font-weight: 600;
 }
 
-.ExpiryDate div:first-child {
+.expiry-date div:first-child {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
 }
 
-.ExpiryDate .Expiry {
+.expiry-date .expiry {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
 
-.ExpiryDate input {
+.expiry-date input {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #17183B;
@@ -45,7 +45,7 @@
     outline: none;
 }
 
-.ExpiryDate select {
+.expiry-date select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -67,6 +67,6 @@
     margin-right: 10px;
 }
 
-.ExpiryDate .CVCField {
+.expiry-date .cvc-field {
     width: 20%;
 }

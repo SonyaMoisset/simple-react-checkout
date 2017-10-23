@@ -1,9 +1,9 @@
-.BasicInput {
+.basic-input {
     padding: 0 20px;
     margin-bottom: 20px;
 }
 
-.BasicInput label {
+.basic-input label {
     display: block;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -11,7 +11,7 @@
     font-weight: 600;
 }
 
-.BasicInput input {
+.basic-input input {
     width: 100%;
     border: 0;
     border-bottom: 1px solid #17183B;
@@ -22,6 +22,6 @@
     outline: none;
 }
 
-.BasicInput input:focus {
+.basic-input input:focus {
     border-bottom: 1px solid #FFB49A;
 }

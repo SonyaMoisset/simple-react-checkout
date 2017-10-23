@@ -10,8 +10,8 @@ const OrderSummary = ({ duration, discount, price, tax }) => {
     const total = subTotal + taxTotal;
 
     return (
-        <div className="OrderSummary">
-            <div className="Title">Order Summary</div>
+        <div className="order-summary">
+            <div className="title">Order Summary</div>
             <table>
                 <tbody>
                     <tr>
@@ -32,9 +32,9 @@ const OrderSummary = ({ duration, discount, price, tax }) => {
                     </tr>
                 </tbody>
             </table>
-            <div className="Total">
-                <div className="TotalLabel">Total</div>
-                <div className="Amount">
+            <div className="total">
+                <div className="total-label">Total</div>
+                <div className="amount">
                     {total} <small>GBP</small>
                 </div>
             </div>

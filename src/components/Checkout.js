@@ -3,7 +3,7 @@ import React from 'react'
 import { OrderSummary, PaymentForm } from './'
 
 const Checkout = ({ duration, discount, tax, price, onSubmit }) =>  (
-    <div className="Checkout">
+    <div className="checkout">
         <OrderSummary
             duration={duration}
             discount={discount}

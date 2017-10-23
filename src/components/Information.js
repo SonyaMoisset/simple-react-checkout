@@ -5,11 +5,11 @@ const Information = ({ duration, name, price }) => {
     const time = pluralize('day', duration);
 
     return (
-        <div className="WorkspaceInformation">
-            <div className="WorkspaceName">{name}</div>
-            <div className="WorkspacePrice">
-                <div className="Price">{price} GBP</div>
-                <div className="Duration">/ {time}</div>
+        <div className="workspace-information">
+            <div className="workspace-name">{name}</div>
+            <div className="workspace-price">
+                <div className="price">{price} GBP</div>
+                <div className="duration">/ {time}</div>
             </div>
         </div>
     )

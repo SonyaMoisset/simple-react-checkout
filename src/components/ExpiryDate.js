@@ -1,10 +1,10 @@
 import React from 'react'
 
 const ExpiryDate = () => (
-    <div className="ExpiryDate">
+    <div className="expiry-date">
         <div>
             <label>Expire on</label>
-            <div className="Expiry">
+            <div className="expiry">
                 <select>
                     <option value="">January</option>
                     <option value="">February</option>
@@ -20,7 +20,7 @@ const ExpiryDate = () => (
                     <option value="">December</option>
                 </select>
 
-                <select name="" id="">
+                <select>
                     <option value="">2017</option>
                     <option value="">2018</option>
                     <option value="">2019</option>
@@ -29,7 +29,7 @@ const ExpiryDate = () => (
                 </select>
             </div>
         </div>
-        <div className="CVCField">
+        <div className="cvc-field">
             <label>CVC</label>
             <input placeholder="000" type="number" />
         </div>

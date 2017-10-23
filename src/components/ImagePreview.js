@@ -3,8 +3,8 @@ import React from 'react'
 import { Information, Meta } from './'
 
 const ImagePreview = ({ image, price, people }) => (
-    <div className="ImagePreview" style={{ 'backgroundImage': 'url(' + image + ')' }}>
-        <div className="WorkspaceOverview">
+    <div className="image-preview" style={{ 'backgroundImage': 'url(' + image + ')' }}>
+        <div className="workspace-overview">
             <Information 
                 name="Coworking Space, South Korea"
                 price={price}

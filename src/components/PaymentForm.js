@@ -5,7 +5,7 @@ import { BasicInput, CheckoutButton, ExpiryDate } from './'
 const PaymentForm = ({ onSubmit }) => (
     <div className="PaymentForm">
         <form onSubmit={ onSubmit }>
-            <div className="Title">Payment information</div>
+            <div className="title">Payment information</div>
 
             <BasicInput
                 name="name"
