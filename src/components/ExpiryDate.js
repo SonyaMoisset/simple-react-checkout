@@ -31,7 +31,9 @@ const ExpiryDate = () => (
         </div>
         <div className="cvc-field">
             <label>CVC</label>
-            <input placeholder="000" type="number" />
+            <input
+                placeholder="000"
+                type="number" />
         </div>
     </div>
 )

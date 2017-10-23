@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 import { Header, Overlay } from './components'
 import { Checkout, ImagePreview } from './containers'
 
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-
 export default class App extends Component {
   constructor (props) {
     super (props)
@@ -18,49 +16,34 @@ export default class App extends Component {
     }
   }
 
-  handleSubmit = (event) => {
-    console.log('handle ajax submission here')
-    event.preventDefault()
-  }
+  handleSubmit = event => event.preventDefault()
 
-  handleChange = (event) => {
-    this.setState({ duration: event.target.value })
-  }
+  handleChange = event => this.setState({ duration: event.target.value })
 
   render() {
     return (
       <div className="app">
-        <ReactCSSTransitionGroup
-          transitionName="overlay"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
-          <div className="Overlay">
-            <Overlay image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" />
-          </div>
-        </ReactCSSTransitionGroup>
+        <div className="Overlay">
+          <Overlay
+            image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" />
+        </div>
 
-        <ReactCSSTransitionGroup
-          transitionName="container"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}>
-          <div className="container">
-            <ImagePreview
-              price={this.state.price}
-              duration={this.state.duration}
-              people={this.state.people}
-              image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg"
-            />
-            <Checkout
-              duration={this.state.duration}
-              discount={this.state.discount}
-              tax={this.state.tax}
-              price={this.state.price}
-              onSubmit={this.handleSubmit}
-            />
-          </div>
-        </ReactCSSTransitionGroup>
+        <div className="container">
+          <ImagePreview
+            price={this.state.price}
+            duration={this.state.duration}
+            people={this.state.people}
+            image="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg" />
+          <Checkout
+            duration={this.state.duration}
+            discount={this.state.discount}
+            tax={this.state.tax}
+            price={this.state.price}
+            onSubmit={this.handleSubmit} />
+        </div>
 
-        <Header onChange={this.handleChange} />
+        <Header
+          onChange={this.handleChange} />
       </div>
     );
   }
