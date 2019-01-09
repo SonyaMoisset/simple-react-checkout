@@ -1,5 +1,7 @@
 # A React web application for a Checkout Form
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SonyaMoisset/Checkout_REACT.svg)](https://greenkeeper.io/)
+
 To see the project:
 - Clone/download it
 - Use ```npm install```
